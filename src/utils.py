@@ -19,7 +19,7 @@ def load_user_settings(file_path='C:/Users/Александр Побережны
 
 
 def convert_timestamps(obj):
-    """Функция для конвертации меток времени"""
+    """Функция для конвертации даты"""
     if isinstance(obj, dict):
         return {k: convert_timestamps(v) for k, v in obj.items()}
     elif isinstance(obj, list):
