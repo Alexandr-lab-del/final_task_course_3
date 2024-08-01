@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 """Загрузка переменных окружения"""
 load_dotenv()
 
-"""Получение API ключей из .env файла"""
+"""Получение API ключей"""
 API_KEY = os.getenv("API_KEY")
 API_KEY_STOCK = os.getenv("API_KEY_STOCK")
 
