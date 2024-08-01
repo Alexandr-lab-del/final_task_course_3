@@ -1,0 +1,78 @@
+2024-08-01 11:03:02,625 - __main__ - INFO - Запуск основного скрипта
+2024-08-01 11:03:02,625 - __main__ - INFO - Запуск функции extract_transactions_with_mobile_numbers
+2024-08-01 11:03:03,725 - src.services - INFO - Файл C:/Users/Александр Побережный/Desktop/питон/final_task_course_3/data/operations.xlsx успешно прочитан.
+2024-08-01 11:03:03,725 - src.services - DEBUG - Регулярное выражение для мобильных номеров создано.
+2024-08-01 11:03:03,729 - src.services - INFO - Успешно отфильтрованы строки с мобильными номерами.
+2024-08-01 11:03:03,733 - src.services - INFO - Успешно преобразовано в список транзакций в формате JSON.
+2024-08-01 11:03:03,741 - src.services - INFO - Успешно выведены транзакции содержащие мобильные номера.
+2024-08-01 11:03:03,741 - __main__ - INFO - Функция extract_transactions_with_mobile_numbers выполнена успешно
+2024-08-01 11:03:03,741 - __main__ - INFO - Загрузка данных из файла C:/Users/Александр Побережный/Desktop/питон/final_task_course_3/data/operations.xlsx
+2024-08-01 11:03:04,682 - __main__ - INFO - Данные успешно загружены, количество записей: 6705
+2024-08-01 11:03:04,682 - __main__ - INFO - Вызов функции spending_by_category
+2024-08-01 11:03:04,695 - src.reports - DEBUG - Вызвана функция spending_by_category с аргументами (            Дата операции  ... Сумма операции с округлением
+0     31.12.2021 16:44:00  ...                       160.89
+1     31.12.2021 16:42:04  ...                        64.00
+2     31.12.2021 16:39:04  ...                       118.12
+3     31.12.2021 15:44:39  ...                        78.05
+4     31.12.2021 01:23:42  ...                       564.00
+...                   ...  ...                          ...
+6700  04.01.2018 14:05:08  ...                      1065.90
+6701  03.01.2018 15:03:35  ...                        73.06
+6702  03.01.2018 14:55:21  ...                        21.00
+6703  01.01.2018 20:27:51  ...                       316.00
+6704  01.01.2018 12:49:53  ...                      3000.00
+
+[6705 rows x 15 columns], 'Супермаркеты', '2021-12-31') и {}
+2024-08-01 11:03:04,695 - src.reports - INFO - Обработка транзакций по категории Супермаркеты и дате 2021-12-31
+2024-08-01 11:03:04,717 - src.reports - DEBUG - Найдено 131 транзакций по категории Супермаркеты
+2024-08-01 11:03:04,721 - src.reports - INFO - Результаты сохранены в файл C:/Users/Александр Побережный/Desktop/питон/final_task_course_3/logs\reports
+2024-08-01 11:03:04,721 - __main__ - INFO - Функция spending_by_category выполнена успешно
+2024-08-01 11:03:04,721 - __main__ - INFO - Вызов функции spending_by_category_custom
+2024-08-01 11:03:04,733 - src.reports - DEBUG - Вызвана функция spending_by_category_custom с аргументами (           Дата операции  ... Сумма операции с округлением
+0    2021-12-31 16:44:00  ...                       160.89
+1    2021-12-31 16:42:04  ...                        64.00
+2    2021-12-31 16:39:04  ...                       118.12
+3    2021-12-31 15:44:39  ...                        78.05
+4    2021-12-31 01:23:42  ...                       564.00
+...                  ...  ...                          ...
+6700 2018-01-04 14:05:08  ...                      1065.90
+6701 2018-01-03 15:03:35  ...                        73.06
+6702 2018-01-03 14:55:21  ...                        21.00
+6703 2018-01-01 20:27:51  ...                       316.00
+6704 2018-01-01 12:49:53  ...                      3000.00
+
+[6705 rows x 15 columns], 'Дом и ремонт', '2020-12-31') и {}
+2024-08-01 11:03:04,733 - src.reports - INFO - Обработка транзакций по категории Дом и ремонт и дате 2020-12-31 с кастомным отчетом
+2024-08-01 11:03:04,738 - src.reports - DEBUG - Найдено 6 транзакций по категории Дом и ремонт
+2024-08-01 11:03:04,740 - src.reports - INFO - Результаты сохранены в файл C:/Users/Александр Побережный/Desktop/питон/final_task_course_3/logs\custom_report
+2024-08-01 11:03:04,740 - __main__ - INFO - Функция spending_by_category_custom выполнена успешно
+2024-08-01 11:03:04,740 - src.views - INFO - Программа запущена с datetime_str: 2018-07-20 15:30:45
+2024-08-01 11:03:04,740 - src.utils - INFO - Настройки загружены из C:/Users/Александр Побережный/Desktop/питон/final_task_course_3/user_settings.json
+2024-08-01 11:03:05,792 - src.views - INFO - Файл C:/Users/Александр Побережный/Desktop/питон/final_task_course_3/data/operations.xlsx успешно прочитан.
+2024-08-01 11:03:05,823 - src.views - INFO - Транзакции успешно проанализированы.
+2024-08-01 11:03:05,827 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.apilayer.com:443
+2024-08-01 11:03:29,317 - urllib3.connectionpool - DEBUG - https://api.apilayer.com:443 "GET /currency_data/live?symbols=USD,EUR HTTP/11" 403 45
+2024-08-01 11:03:29,318 - src.views - ERROR - Ошибка в обращении к сайту: 403 Client Error: Forbidden for url: https://api.apilayer.com/currency_data/live?symbols=USD,EUR
+2024-08-01 11:03:29,319 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.alphavantage.co:443
+2024-08-01 11:03:29,850 - urllib3.connectionpool - DEBUG - https://www.alphavantage.co:443 "GET /query?function=GLOBAL_QUOTE&symbol=AAPL&apikey=2I8ASTIZ7JENJGFM HTTP/11" 200 None
+2024-08-01 11:03:30,170 - src.views - INFO - Цены на акции для AAPL получены успешно.
+2024-08-01 11:03:30,170 - src.views - DEBUG - Полученные данные о цене акций для AAPL: {'Information': 'Thank you for using Alpha Vantage! Our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits.'}
+2024-08-01 11:03:30,170 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.alphavantage.co:443
+2024-08-01 11:03:30,641 - urllib3.connectionpool - DEBUG - https://www.alphavantage.co:443 "GET /query?function=GLOBAL_QUOTE&symbol=AMZN&apikey=2I8ASTIZ7JENJGFM HTTP/11" 200 None
+2024-08-01 11:03:30,641 - src.views - INFO - Цены на акции для AMZN получены успешно.
+2024-08-01 11:03:30,642 - src.views - DEBUG - Полученные данные о цене акций для AMZN: {'Information': 'Thank you for using Alpha Vantage! Our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits.'}
+2024-08-01 11:03:30,642 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.alphavantage.co:443
+2024-08-01 11:03:33,466 - urllib3.connectionpool - DEBUG - https://www.alphavantage.co:443 "GET /query?function=GLOBAL_QUOTE&symbol=GOOGL&apikey=2I8ASTIZ7JENJGFM HTTP/11" 200 None
+2024-08-01 11:03:33,466 - src.views - INFO - Цены на акции для GOOGL получены успешно.
+2024-08-01 11:03:33,466 - src.views - DEBUG - Полученные данные о цене акций для GOOGL: {'Information': 'Thank you for using Alpha Vantage! Our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits.'}
+2024-08-01 11:03:33,467 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.alphavantage.co:443
+2024-08-01 11:03:34,822 - urllib3.connectionpool - DEBUG - https://www.alphavantage.co:443 "GET /query?function=GLOBAL_QUOTE&symbol=MSFT&apikey=2I8ASTIZ7JENJGFM HTTP/11" 200 None
+2024-08-01 11:03:34,822 - src.views - INFO - Цены на акции для MSFT получены успешно.
+2024-08-01 11:03:34,823 - src.views - DEBUG - Полученные данные о цене акций для MSFT: {'Information': 'Thank you for using Alpha Vantage! Our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits.'}
+2024-08-01 11:03:34,823 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.alphavantage.co:443
+2024-08-01 11:03:35,083 - urllib3.connectionpool - DEBUG - https://www.alphavantage.co:443 "GET /query?function=GLOBAL_QUOTE&symbol=TSLA&apikey=2I8ASTIZ7JENJGFM HTTP/11" 200 None
+2024-08-01 11:03:35,083 - src.views - INFO - Цены на акции для TSLA получены успешно.
+2024-08-01 11:03:35,083 - src.views - DEBUG - Полученные данные о цене акций для TSLA: {'Information': 'Thank you for using Alpha Vantage! Our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits.'}
+2024-08-01 11:03:35,083 - src.views - INFO - Цены на акции успешно обработаны.
+2024-08-01 11:03:35,084 - src.views - INFO - Результаты успешно сформированы.
+2024-08-01 11:03:35,084 - src.views - DEBUG - Результаты: {'greeting': 'Добрый день', 'cards': [{'Последние цифры': '4556', 'Всего потрачено': -500.0, 'Кэшбэк': -5.0}, {'Последние цифры': '7197', 'Всего потрачено': -14206.4, 'Кэшбэк': -142.06}], 'top_transactions': [{'Дата операции': '2018-07-06T14:57:24', 'Сумма операции': 4200.0, 'Категория': 'Пополнения', 'Описание': 'Перевод с карты'}, {'Дата операции': '2018-07-16T00:00:00', 'Сумма операции': 182.57, 'Категория': 'Бонусы', 'Описание': 'Проценты на остаток по счету'}, {'Дата операции': '2018-07-16T00:00:00', 'Сумма операции': 169.0, 'Категория': 'Бонусы', 'Описание': 'Вознаграждение за операции покупок'}, {'Дата операции': '2018-07-10T06:37:53', 'Сумма операции': -5.0, 'Категория': 'Фастфуд', 'Описание': 'OOO Akvares'}, {'Дата операции': '2018-07-10T15:36:26', 'Сумма операции': -27.0, 'Категория': 'Супермаркеты', 'Описание': 'Magazin 25'}], 'currency_rates': [{'currency': 'USD', 'rate': 73.21}, {'currency': 'EUR', 'rate': 87.08}], 'stock_prices': [{'stock': 'AAPL', 'price': 150.12}, {'stock': 'AMZN', 'price': 3173.18}, {'stock': 'GOOGL', 'price': 2742.39}, {'stock': 'MSFT', 'price': 296.71}, {'stock': 'TSLA', 'price': 1007.08}], 'start_date': '2018-07-01T15:30:45', 'end_date': '2018-07-20T15:30:45'}

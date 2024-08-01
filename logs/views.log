@@ -1,0 +1,31 @@
+2024-07-31 13:36:37,111 - __main__ - INFO - Программа запущена с datetime_str: 2018-07-20 15:30:45
+2024-07-31 13:36:37,112 - utils - INFO - Настройки загружены из C:/Users/Александр Побережный/Desktop/питон/final_task_course_3/user_settings.json
+2024-07-31 13:36:38,039 - __main__ - INFO - Файл C:/Users/Александр Побережный/Desktop/питон/final_task_course_3/data/operations.xlsx успешно прочитан.
+2024-07-31 13:36:38,064 - __main__ - INFO - Транзакции успешно проанализированы.
+2024-07-31 13:36:38,066 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.apilayer.com:443
+2024-07-31 13:36:38,378 - urllib3.connectionpool - DEBUG - https://api.apilayer.com:443 "GET /currency_data/live?symbols=USD,EUR HTTP/11" 403 45
+2024-07-31 13:36:38,378 - __main__ - ERROR - Ошибка в обращении к сайту: 403 Client Error: Forbidden for url: https://api.apilayer.com/currency_data/live?symbols=USD,EUR
+2024-07-31 13:36:38,379 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.alphavantage.co:443
+2024-07-31 13:36:38,625 - urllib3.connectionpool - DEBUG - https://www.alphavantage.co:443 "GET /query?function=GLOBAL_QUOTE&symbol=AAPL&apikey=13Z080X92S8Z6YS2 HTTP/11" 200 None
+2024-07-31 13:36:38,625 - __main__ - INFO - Цены на акции для AAPL получены успешно.
+2024-07-31 13:36:38,625 - __main__ - DEBUG - Полученные данные о цене акций для AAPL: {'Information': 'Thank you for using Alpha Vantage! Our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits.'}
+2024-07-31 13:36:38,626 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.alphavantage.co:443
+2024-07-31 13:36:38,894 - urllib3.connectionpool - DEBUG - https://www.alphavantage.co:443 "GET /query?function=GLOBAL_QUOTE&symbol=AMZN&apikey=13Z080X92S8Z6YS2 HTTP/11" 200 None
+2024-07-31 13:36:38,894 - __main__ - INFO - Цены на акции для AMZN получены успешно.
+2024-07-31 13:36:38,894 - __main__ - DEBUG - Полученные данные о цене акций для AMZN: {'Information': 'Thank you for using Alpha Vantage! Our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits.'}
+2024-07-31 13:36:38,895 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.alphavantage.co:443
+2024-07-31 13:36:39,163 - urllib3.connectionpool - DEBUG - https://www.alphavantage.co:443 "GET /query?function=GLOBAL_QUOTE&symbol=GOOGL&apikey=13Z080X92S8Z6YS2 HTTP/11" 200 None
+2024-07-31 13:36:39,163 - __main__ - INFO - Цены на акции для GOOGL получены успешно.
+2024-07-31 13:36:39,163 - __main__ - DEBUG - Полученные данные о цене акций для GOOGL: {'Information': 'Thank you for using Alpha Vantage! Our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits.'}
+2024-07-31 13:36:39,164 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.alphavantage.co:443
+2024-07-31 13:36:39,430 - urllib3.connectionpool - DEBUG - https://www.alphavantage.co:443 "GET /query?function=GLOBAL_QUOTE&symbol=MSFT&apikey=13Z080X92S8Z6YS2 HTTP/11" 200 None
+2024-07-31 13:36:39,431 - __main__ - INFO - Цены на акции для MSFT получены успешно.
+2024-07-31 13:36:39,431 - __main__ - DEBUG - Полученные данные о цене акций для MSFT: {'Information': 'Thank you for using Alpha Vantage! Our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits.'}
+2024-07-31 13:36:39,432 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.alphavantage.co:443
+2024-07-31 13:36:39,695 - urllib3.connectionpool - DEBUG - https://www.alphavantage.co:443 "GET /query?function=GLOBAL_QUOTE&symbol=TSLA&apikey=13Z080X92S8Z6YS2 HTTP/11" 200 None
+2024-07-31 13:36:39,695 - __main__ - INFO - Цены на акции для TSLA получены успешно.
+2024-07-31 13:36:39,695 - __main__ - DEBUG - Полученные данные о цене акций для TSLA: {'Information': 'Thank you for using Alpha Vantage! Our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits.'}
+2024-07-31 13:36:39,695 - __main__ - INFO - Цены на акции успешно обработаны.
+2024-07-31 13:36:39,696 - __main__ - INFO - Результаты успешно сформированы.
+2024-07-31 13:36:39,696 - __main__ - DEBUG - Результаты: {'greeting': 'Добрый день', 'cards': [{'Последние цифры': '4556', 'Всего потрачено': -500.0, 'Кэшбэк': -5.0}, {'Последние цифры': '7197', 'Всего потрачено': -14206.4, 'Кэшбэк': -142.06}], 'top_transactions': [{'Дата операции': '2018-07-06T14:57:24', 'Сумма операции': 4200.0, 'Категория': 'Пополнения', 'Описание': 'Перевод с карты'}, {'Дата операции': '2018-07-16T00:00:00', 'Сумма операции': 182.57, 'Категория': 'Бонусы', 'Описание': 'Проценты на остаток по счету'}, {'Дата операции': '2018-07-16T00:00:00', 'Сумма операции': 169.0, 'Категория': 'Бонусы', 'Описание': 'Вознаграждение за операции покупок'}, {'Дата операции': '2018-07-10T06:37:53', 'Сумма операции': -5.0, 'Категория': 'Фастфуд', 'Описание': 'OOO Akvares'}, {'Дата операции': '2018-07-10T15:36:26', 'Сумма операции': -27.0, 'Категория': 'Супермаркеты', 'Описание': 'Magazin 25'}], 'currency_rates': [{'currency': 'USD', 'rate': 73.21}, {'currency': 'EUR', 'rate': 87.08}], 'stock_prices': [{'stock': 'AAPL', 'price': 150.12}, {'stock': 'AMZN', 'price': 3173.18}, {'stock': 'GOOGL', 'price': 2742.39}, {'stock': 'MSFT', 'price': 296.71}, {'stock': 'TSLA', 'price': 1007.08}], 'start_date': '2018-07-01T15:30:45', 'end_date': '2018-07-20T15:30:45'}
+2024-07-31 13:36:39,696 - __main__ - INFO - Программа успешно завершена.
